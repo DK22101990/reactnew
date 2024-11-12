@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  .nested.dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  .nested.dropdown .dropdown-menu {
+    top: -15px;
+    margin-left: 100%;
+  }
+  .nested.dropdown .dropdown-trigger button::after {
+    content: "";
+  }
+  .nested.dropdown .dropdown-trigger button {
+    padding: 0px 0px;
+    border: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    height: 2em;
+  }
+
+  nav{
+      background-color: black;
+  }
+
+  .iframe{
+    width: 100vw;
+    height: 100vh; 
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /*width: 1140px;
+    height: 541.25px;  */
+  }
+
+  .allCenter{
+    display: flex;
+    justify-content: center;
+  }
+
+  .AllInline::before { /* single : to support older browsers */
+    display:block;
+    width:100%;
+}
+.customDropDown{
+  border: 2px solid #b4adad;
+  border-radius: 20px;
+  padding: 3px;
+}
+.customBorder{
+  border: 2px solid #7d889c;
+    border-radius: 5px;
+    padding: 0px 4px 0px 5px;
+}
+.changePlaceholder:focus::placeholder {
+    color: transparent;
+  }
+
+  p {
+    color: #bf1650;
+  }
+  
+  p::before {
+    display: inline;
+    content: "⚠ ";
+  }
